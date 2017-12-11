@@ -5,12 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
+
     <title>Term scoring and classification &mdash; yamz 0.2.1 documentation</title>
-    
-    <link rel="stylesheet" href="_static/default.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
+
+    <link rel="stylesheet" href="/default.css" type="text/css" />
+    <link rel="stylesheet" href="/pygments.css" type="text/css" />
+
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
@@ -20,12 +20,12 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="/jquery.js"></script>
+    <script type="text/javascript" src="/underscore.js"></script>
+    <script type="text/javascript" src="/doctools.js"></script>
     <link rel="top" title="yamz 0.2.1 documentation" href="index.html" />
     <link rel="next" title="Top level programs sea and ice" href="top.html" />
-    <link rel="prev" title="The pretty module" href="pretty.html" /> 
+    <link rel="prev" title="The pretty module" href="pretty.html" />
   </head>
   <body>
     <div class="related">
@@ -43,25 +43,25 @@
         <li class="right" >
           <a href="pretty.html" title="The pretty module"
              accesskey="P">previous</a> |</li>
-        <li><a href="index.html">yamz 0.2.1 documentation</a> &raquo;</li> 
+        <li><a href="index.html">yamz 0.2.1 documentation</a> &raquo;</li>
       </ul>
-    </div>  
+    </div>
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
           <div class="body">
-            
+
   <div class="section" id="module-seaice.SeaIceConnector">
 <span id="term-scoring-and-classification"></span><h1>Term scoring and classification<a class="headerlink" href="#module-seaice.SeaIceConnector" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="seaice.SeaIceConnector.calculateConsensus">
 <tt class="descclassname">seaice.SeaIceConnector.</tt><tt class="descname">calculateConsensus</tt><big>(</big><em>u</em>, <em>d</em>, <em>t</em>, <em>U_sum</em>, <em>D_sum</em><big>)</big><a class="reference internal" href="_modules/seaice/SeaIceConnector.html#calculateConsensus"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#seaice.SeaIceConnector.calculateConsensus" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calcluate consensus score. This is a heuristic for the percentage 
+<dd><p>Calcluate consensus score. This is a heuristic for the percentage
 of the community who finds a term useful. Based on the observation
-that not every user will vote on a given term, user reptuation is 
-used to estimate consensus. As the number of voters approaches 
-the number of users, the votes become more equitable. (See 
+that not every user will vote on a given term, user reptuation is
+used to estimate consensus. As the number of voters approaches
+the number of users, the votes become more equitable. (See
 doc/Scoring.pdf for details.)</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -83,8 +83,8 @@ doc/Scoring.pdf for details.)</p>
 <dl class="function">
 <dt id="seaice.SeaIceConnector.calculateStability">
 <tt class="descclassname">seaice.SeaIceConnector.</tt><tt class="descname">calculateStability</tt><big>(</big><em>S</em>, <em>p_S</em>, <em>T_now</em>, <em>T_last</em>, <em>T_stable</em><big>)</big><a class="reference internal" href="_modules/seaice/SeaIceConnector.html#calculateStability"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#seaice.SeaIceConnector.calculateStability" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calculate term stability, returning the time point when the term 
-become stable (as a datetime.datetime) or None if it&#8217;s not stable. 
+<dd><p>Calculate term stability, returning the time point when the term
+become stable (as a datetime.datetime) or None if it&#8217;s not stable.
 This is based on the rate of change of the consensus score:</p>
 <blockquote>
 <div><tt class="docutils literal"><span class="pre">delta_S</span> <span class="pre">=</span> <span class="pre">(S</span> <span class="pre">-</span> <span class="pre">P_s)</span> <span class="pre">/</span> <span class="pre">(T_now</span> <span class="pre">-</span> <span class="pre">T_last)</span></tt></div></blockquote>
@@ -188,7 +188,7 @@ be stable in order to be classified.</p>
         <li class="right" >
           <a href="pretty.html" title="The pretty module"
              >previous</a> |</li>
-        <li><a href="index.html">yamz 0.2.1 documentation</a> &raquo;</li> 
+        <li><a href="index.html">yamz 0.2.1 documentation</a> &raquo;</li>
       </ul>
     </div>
     <div class="footer">

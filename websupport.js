@@ -667,14 +667,14 @@
     getCommentsURL: '/_get_comments',
     acceptCommentURL: '/_accept_comment',
     deleteCommentURL: '/_delete_comment',
-    commentImage: '/static/_static/comment.png',
-    closeCommentImage: '/static/_static/comment-close.png',
-    loadingImage: '/static/_static/ajax-loader.gif',
-    commentBrightImage: '/static/_static/comment-bright.png',
-    upArrow: '/static/_static/up.png',
-    downArrow: '/static/_static/down.png',
-    upArrowPressed: '/static/_static/up-pressed.png',
-    downArrowPressed: '/static/_static/down-pressed.png',
+    commentImage: '/comment.png', //these all may be unhappy
+    closeCommentImage: '/comment-close.png',
+    loadingImage: '/ajax-loader.gif',
+    commentBrightImage: '/comment-bright.png',
+    upArrow: '/up.png',
+    downArrow: '/down.png',
+    upArrowPressed: '/up-pressed.png',
+    downArrowPressed: '/down-pressed.png',
     voting: false,
     moderator: false
   };

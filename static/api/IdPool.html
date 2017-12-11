@@ -5,12 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
+
     <title>class IdPool &mdash; yamz 0.2.1 documentation</title>
-    
-    <link rel="stylesheet" href="_static/default.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
+
+    <link rel="stylesheet" href="/default.css" type="text/css" />
+    <link rel="stylesheet" href="/pygments.css" type="text/css" />
+
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
@@ -20,13 +20,13 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="/jquery.js"></script>
+    <script type="text/javascript" src="/underscore.js"></script>
+    <script type="text/javascript" src="/doctools.js"></script>
     <link rel="top" title="yamz 0.2.1 documentation" href="index.html" />
     <link rel="up" title="The seaice package" href="seaice.html" />
     <link rel="next" title="the user module" href="user.html" />
-    <link rel="prev" title="class ConnectorPool" href="ConnectorPool.html" /> 
+    <link rel="prev" title="class ConnectorPool" href="ConnectorPool.html" />
   </head>
   <body>
     <div class="related">
@@ -45,15 +45,15 @@
           <a href="ConnectorPool.html" title="class ConnectorPool"
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">yamz 0.2.1 documentation</a> &raquo;</li>
-          <li><a href="seaice.html" accesskey="U">The <tt class="docutils literal"><span class="pre">seaice</span></tt> package</a> &raquo;</li> 
+          <li><a href="seaice.html" accesskey="U">The <tt class="docutils literal"><span class="pre">seaice</span></tt> package</a> &raquo;</li>
       </ul>
-    </div>  
+    </div>
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
           <div class="body">
-            
+
   <div class="section" id="class-idpool">
 <h1><tt class="docutils literal"><span class="pre">class</span> <span class="pre">IdPool</span></tt><a class="headerlink" href="#class-idpool" title="Permalink to this headline">¶</a></h1>
 <p>This class implements a surrogate identifier pool
@@ -66,13 +66,13 @@ for the DB tables <tt class="docutils literal"><span class="pre">SI.Terms</span>
 <dt id="seaice.IdPool.IdPool">
 <em class="property">class </em><tt class="descclassname">seaice.IdPool.</tt><tt class="descname">IdPool</tt><big>(</big><em>db_con</em>, <em>table</em><big>)</big><a class="reference internal" href="_modules/seaice/IdPool.html#IdPool"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#seaice.IdPool.IdPool" title="Permalink to this definition">¶</a></dt>
 <dd><blockquote>
-<div><p>A thread-safe object for producing and consuming table row IDs within 
-a particluar context, i.e. <tt class="docutils literal"><span class="pre">SI.Terms</span></tt>, <tt class="docutils literal"><span class="pre">SI.Users</span></tt>, and <tt class="docutils literal"><span class="pre">SI.Comments</span></tt>. 
-When initialized, an instance queries the table for all assigned IDs in 
-ascending order. Continuous regions of unassigned IDs are found and added 
-to the pool. The highest assigned ID is noticed so that when the pool is 
+<div><p>A thread-safe object for producing and consuming table row IDs within
+a particluar context, i.e. <tt class="docutils literal"><span class="pre">SI.Terms</span></tt>, <tt class="docutils literal"><span class="pre">SI.Users</span></tt>, and <tt class="docutils literal"><span class="pre">SI.Comments</span></tt>.
+When initialized, an instance queries the table for all assigned IDs in
+ascending order. Continuous regions of unassigned IDs are found and added
+to the pool. The highest assigned ID is noticed so that when the pool is
 empty, the producer function returns the next highest avaialble.</p>
-<p><strong>TODO</strong> This could be made more space-efficient by combining contiguous 
+<p><strong>TODO</strong> This could be made more space-efficient by combining contiguous
 free IDs into ranges.</p>
 </div></blockquote>
 <table class="docutils field-list" frame="void" rules="none">
@@ -184,7 +184,7 @@ should have a column of surrogate ID scalled &#8220;id&#8221;.</li>
           <a href="ConnectorPool.html" title="class ConnectorPool"
              >previous</a> |</li>
         <li><a href="index.html">yamz 0.2.1 documentation</a> &raquo;</li>
-          <li><a href="seaice.html" >The <tt class="docutils literal"><span class="pre">seaice</span></tt> package</a> &raquo;</li> 
+          <li><a href="seaice.html" >The <tt class="docutils literal"><span class="pre">seaice</span></tt> package</a> &raquo;</li>
       </ul>
     </div>
     <div class="footer">

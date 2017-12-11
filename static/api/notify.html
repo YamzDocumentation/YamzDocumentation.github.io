@@ -5,12 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
+
     <title>The notify module &mdash; yamz 0.2.1 documentation</title>
-    
-    <link rel="stylesheet" href="_static/default.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
+
+    <link rel="stylesheet" href="/default.css" type="text/css" />
+    <link rel="stylesheet" href="/pygments.css" type="text/css" />
+
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
@@ -20,13 +20,13 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="/jquery.js"></script>
+    <script type="text/javascript" src="/underscore.js"></script>
+    <script type="text/javascript" src="/doctools.js"></script>
     <link rel="top" title="yamz 0.2.1 documentation" href="index.html" />
     <link rel="up" title="The seaice package" href="seaice.html" />
     <link rel="next" title="The pretty module" href="pretty.html" />
-    <link rel="prev" title="The auth module" href="auth.html" /> 
+    <link rel="prev" title="The auth module" href="auth.html" />
   </head>
   <body>
     <div class="related">
@@ -45,15 +45,15 @@
           <a href="auth.html" title="The auth module"
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">yamz 0.2.1 documentation</a> &raquo;</li>
-          <li><a href="seaice.html" accesskey="U">The <tt class="docutils literal"><span class="pre">seaice</span></tt> package</a> &raquo;</li> 
+          <li><a href="seaice.html" accesskey="U">The <tt class="docutils literal"><span class="pre">seaice</span></tt> package</a> &raquo;</li>
       </ul>
-    </div>  
+    </div>
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
           <div class="body">
-            
+
   <div class="section" id="the-notify-module">
 <h1>The <tt class="docutils literal"><span class="pre">notify</span></tt> module<a class="headerlink" href="#the-notify-module" title="Permalink to this headline">¶</a></h1>
 <p>Notifications are generated when important changes to the <em>SeaIce</em> dictionary
@@ -91,9 +91,9 @@ size=&quot;8.0, 12.0&quot;;
 <span class="target" id="module-seaice.notify"></span><dl class="class">
 <dt id="seaice.notify.BaseNotification">
 <em class="property">class </em><tt class="descclassname">seaice.notify.</tt><tt class="descname">BaseNotification</tt><big>(</big><em>term_id</em>, <em>T_notify</em><big>)</big><a class="reference internal" href="_modules/seaice/notify.html#BaseNotification"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#seaice.notify.BaseNotification" title="Permalink to this definition">¶</a></dt>
-<dd><p>Base class for notifications in the SeaIce web interface Each sub class 
+<dd><p>Base class for notifications in the SeaIce web interface Each sub class
 should implement __init__(), __str__(), and getAsHTML(db_con) This data
-structure only stores surrogate keys for users, terms, and comments. so 
+structure only stores surrogate keys for users, terms, and comments. so
 that a notification is never inconsistent. As a result, getAsHTML causes
 a query to the DB.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -112,7 +112,7 @@ a query to the DB.</p>
 <dt id="seaice.notify.BaseNotification.getAsHTML">
 <tt class="descname">getAsHTML</tt><big>(</big><em>db_con</em><big>)</big><a class="reference internal" href="_modules/seaice/notify.html#BaseNotification.getAsHTML"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#seaice.notify.BaseNotification.getAsHTML" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return an HTML-formatted notification string. To avoid dereferencing
-something that has been deleted (term, comment, user, etc.), return 
+something that has been deleted (term, comment, user, etc.), return
 None if the database has no results.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -130,7 +130,7 @@ None if the database has no results.</p>
 <dt id="seaice.notify.BaseNotification.getAsPlaintext">
 <tt class="descname">getAsPlaintext</tt><big>(</big><em>db_con</em><big>)</big><a class="reference internal" href="_modules/seaice/notify.html#BaseNotification.getAsPlaintext"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#seaice.notify.BaseNotification.getAsPlaintext" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a notification string. To avoid dereferencing
-something that has been deleted (term, comment, user, etc.), return 
+something that has been deleted (term, comment, user, etc.), return
 None if the database has no results.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -197,7 +197,7 @@ None if the database has no results.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>user_id</strong> (<em>int</em>) &#8211; ID of the user who has updated the term.</li>
-<li><strong>term_string</strong> (<em>str</em>) &#8211; Term string before the term was deleted. We can&#8217;t use the ID 
+<li><strong>term_string</strong> (<em>str</em>) &#8211; Term string before the term was deleted. We can&#8217;t use the ID
 since it has been removed from the database.</li>
 <li><strong>T_notify</strong> (<em>datetime.datetime</em>) &#8211; The time at which the notification was produced.</li>
 </ul>
@@ -259,7 +259,7 @@ since it has been removed from the database.</li>
           <a href="auth.html" title="The auth module"
              >previous</a> |</li>
         <li><a href="index.html">yamz 0.2.1 documentation</a> &raquo;</li>
-          <li><a href="seaice.html" >The <tt class="docutils literal"><span class="pre">seaice</span></tt> package</a> &raquo;</li> 
+          <li><a href="seaice.html" >The <tt class="docutils literal"><span class="pre">seaice</span></tt> package</a> &raquo;</li>
       </ul>
     </div>
     <div class="footer">
